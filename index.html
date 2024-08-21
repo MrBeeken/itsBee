@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="fancy.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <span class="gg--bee"></span>
+      <div class="logo" id="top-logo">Bianca Strydom</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bianca Strydom</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- //////////////////////////////////////PROFILE///////////////////////////////////////////////// -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img id="bopic" src="./assets/headshot.jpg" alt="Bianca Strydom profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bianca Strydom</h1>
+        <p class="section__text__p2"></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV Lank.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////ABOUT///////////////////////////////////////////////// -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title projects-title">
+        <span>A</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span> </span>
+        <span>M</span>
+        <span?>e</span?>
+      </h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/headshot2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container lscroll">
+              <div class="scrollText">
+                <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+                />
+                <h3>Experience</h3>
+                <p>7 year Education</p>
+              </div>
+            </div>
+            <div class="details-container rscroll">
+              <div class="scrollText">
+                <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BEd InterSen Phase<br /></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-container" class="aboutme">
+            <p style="text-align: center;">
+              With 7 years of professional teaching experience with both primary school and high school learners, I am a well-seasoned educator. 
+              Known for being friendly, creative, and a strong team player, and skilled in innovative problem-solving, fostering a positive learning environment, 
+              and engaging students with dynamic lessons. My biggest commitment is to inspire <em>creativity</em>  and critical thinking in learners.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    <!-- //////////////////////////////////////EXPERIENCE///////////////////////////////////////////////// -->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title projects-title">
+        <span>E</span>
+        <span>x</span>
+        <span>p</span>
+        <span>e</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>n</span>
+        <span>c</span>
+        <span?>e</span>
+      </h1>
+      <div class="experience-details-container">
+        <div class="about-containers expcontainer">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Teaching</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Art - FET Phase</h3>
+                  <p>5 YOE</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>English - Senior Phase</h3>
+                  <p>5 YOE</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Natural Sciences - Intermediate Phase</h3>
+                  <p>2 YOE</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Life Skills - Intermediate Phase</h3>
+                  <p>2 YOE</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Additional Training</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://coursera.org/share/cc9130e8fdebc15fbfa681ce0dd7525c" id="purp" target="_blank">ASA Level 1</a></h3>
+                  <p>High Jump</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://coursera.org/share/cc9130e8fdebc15fbfa681ce0dd7525c" id="org" target="_blank">First Aid</a></h3>
+                  <p>Level 1</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://coursera.org/share/cc9130e8fdebc15fbfa681ce0dd7525c" id="purp" target="_blank">TEFL</a></h3>
+                  <p>GA Level 5</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://coursera.org/share/cc9130e8fdebc15fbfa681ce0dd7525c" id="org" target="_blank">Netball Umpire</a></h3>
+                  <p>Level 1</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3><a href="https://coursera.org/share/cc9130e8fdebc15fbfa681ce0dd7525c" id="purp" target="_blank">SACE Register</a></h3>
+                  <p>Since 2018</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Extracurricular</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Athletics - High Jump</h3>
+                  <p>7 YOE</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Netball</h3>
+                  <p>7 YOE</p>
+                  <p>Still don't like it...</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Art Competitions</h3>
+                  <p>7 YOE</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Windows</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google suite</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft suite</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Zoom</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <!-- //////////////////////////////////////CONTACT///////////////////////////////////////////////// -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title projects-title">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span></span>
+        <span>M</span>
+        <span>e</span>
+      </h1>
+      <div id="contactbottom">
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:bianca.strydom95@gmail.com">bianca.strydom95@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 RD</p>
+      <p>~All Rights Reserved~</p>
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

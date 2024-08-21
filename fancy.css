@@ -1,0 +1,212 @@
+.projects-title span {
+    display: inline-block;
+    color: orange;; /* Default color */
+    font-family: Arial, sans-serif; /* Default font family */
+    font-size: 16px; /* Default font size */
+    animation: colorAndSizeWave 2s infinite;
+}
+
+/* Keyframes for color and size changing effect */
+@keyframes colorAndSizeWave {
+    0%, 100% {
+        color: orange;
+        font-size: 48px; /* Original size */
+    }
+    50% {
+        color: rgb(3, 159, 232);
+        font-size: 52px; /* Larger size */
+    }
+}
+
+/* Stagger the animation for each letter */
+.projects-title span:nth-child(1) { animation-delay: 0s; }
+.projects-title span:nth-child(2) { animation-delay: 0.1s; }
+.projects-title span:nth-child(3) { animation-delay: 0.2s; }
+.projects-title span:nth-child(4) { animation-delay: 0.3s; }
+.projects-title span:nth-child(5) { animation-delay: 0.4s; }
+.projects-title span:nth-child(6) { animation-delay: 0.5s; }
+.projects-title span:nth-child(7) { animation-delay: 0.6s; }
+.projects-title span:nth-child(8) { animation-delay: 0.7s; }
+
+
+
+
+/* #######################change font color and style#################################
+
+.projects-title span:nth-child(1) { animation-delay: 0s; }
+.projects-title span:nth-child(2) { animation-delay: 0.1s; }
+.projects-title span:nth-child(3) { animation-delay: 0.2s; }
+.projects-title span:nth-child(4) { animation-delay: 0.3s; }
+.projects-title span:nth-child(5) { animation-delay: 0.4s; }
+.projects-title span:nth-child(6) { animation-delay: 0.5s; }
+.projects-title span:nth-child(7) { animation-delay: 0.6s; }
+.projects-title span:nth-child(8) { animation-delay: 0.7s; }
+
+.projects-title span {
+display: inline-block;
+color: orange;\\\\\\Default Color\\\\\\\
+font-family: Arial, sans-serif;\\\\\\Default font family\\\\\\\
+animation: colorAndFontWave 2s infinite;
+}
+
+\\\\\Keyframes for color and font changing effect\\\\\\\\\
+@keyframes colorAndFontWave {
+0%, 100% {
+color: orange;
+font-weight: normal;
+font-style: normal;
+}
+50% {
+color: purple;
+font-weight: bold;
+font-style: italic;
+}
+}
+\\\\\\\tagger the animation for each letter\\\\\\\\
+.projects-title span:nth-child(1) { animation-delay: 0s; }
+.projects-title span:nth-child(2) { animation-delay: 0.1s; }
+.projects-title span:nth-child(3) { animation-delay: 0.2s; }
+.projects-title span:nth-child(4) { animation-delay: 0.3s; }
+.projects-title span:nth-child(5) { animation-delay: 0.4s; }
+.projects-title span:nth-child(6) { animation-delay: 0.5s; }
+.projects-title span:nth-child(7) { animation-delay: 0.6s; }
+.projects-title span:nth-child(8) { animation-delay: 0.7s; } */
+
+
+/* #############################################change font color and style#############################
+
+.projects-title span {
+    display: inline-block;
+    color: orange; \\\\\\\ Default color \\\\\\\\\
+    font-family: Arial, sans-serif; \\\\\\\\ Default font family \\\\\\\\
+    font-size: 16px; \\\\\\\\ Default font size \\\\\\\\\
+    animation: colorAndSizeWave 2s infinite;
+}
+
+\\\\\\\\ Keyframes for color and size changing effect\\\\\\
+@keyframes colorAndSizeWave {
+    0%, 100% {
+        color: orange;
+        font-size: 16px; \\\\\\\Original size\\\\\
+    }
+    50% {
+        color: purple;
+        font-size: 20px; \\\\\Larger size\\\\\\\\
+    }
+}
+
+\\\\\\\Stagger the animation for each letter\\\\\\
+.projects-title span:nth-child(1) { animation-delay: 0s; }
+.projects-title span:nth-child(2) { animation-delay: 0.1s; }
+.projects-title span:nth-child(3) { animation-delay: 0.2s; }
+.projects-title span:nth-child(4) { animation-delay: 0.3s; }
+.projects-title span:nth-child(5) { animation-delay: 0.4s; }
+.projects-title span:nth-child(6) { animation-delay: 0.5s; }
+.projects-title span:nth-child(7) { animation-delay: 0.6s; }
+.projects-title span:nth-child(8) { animation-delay: 0.7s; }*/
+
+/* #############################################Scrollbar custom color#############################*/
+/* Width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(240, 38, 240), rgb(27, 255, 240));
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, rgb(240, 38, 186), rgb(27, 206, 255)); /* darker shades for hover effect */
+}
+
+/* Hide scrollbar for smaller screens */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#top-logo{
+    margin-right: 50%;
+}
+
+.gg--bee {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M17.951 15.571a6 6 0 0 1-2.27 4.064a4 4 0 0 1-1.756 1.96a2 2 0 0 1-3.874 0a4 4 0 0 1-1.756-1.96a6 6 0 0 1-2.269-4.047a3.001 3.001 0 0 1-4.11-4.32L6.01 6.39a6 6 0 0 1 11.953-.033l4.12 4.91a3 3 0 0 1-4.132 4.304m-2.326-2.665l-1.678-2h-3.894l-1.678 2zm2.363-.296l1.032 1.229a1 1 0 1 0 1.532-1.286l-2.564-3.055zm-2-3.704v-2a4 4 0 0 0-8 0v2zM4.98 13.839l1.007-1.2V9.527l-2.54 3.027a1 1 0 1 0 1.533 1.285m7.007 5.067a4 4 0 0 1-4-4h8a4 4 0 0 1-4 4' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin: 0;
+    color: rgb(251, 0, 255);
+  }
+
+
+  #contactbottom {
+    position: relative;
+    border-radius: 2rem;
+    padding: 4px;
+    justify-content: center;
+    margin: 2rem auto;
+    padding-top: 4px;
+  }
+  
+  #contactbottom .inner {
+    border-radius: 4px;
+  }
+  
+  #contactbottom::before,
+  #contactbottom::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+      45deg,
+      #ff595e,
+      #ffca3a,
+      #ff47b2,
+      #1982c4,
+      #6a4c93
+    );
+    background-size: 400%;
+    z-index: -1;
+    animation: glow 20s linear infinite;
+    width: 100%;
+    border-radius: 2rem;
+  }
+  
+  #contactbottom::after {
+    filter: blur(25px);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  @keyframes glow {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 100% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
