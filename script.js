@@ -8,7 +8,7 @@ function toggleMenu() {
   document.addEventListener("DOMContentLoaded", function() {
     // Text change functionality with typing effect
     const textElement = document.querySelector('.section__text__p2');
-    const texts = ["Art teacher", "English teacher", "Netball Coach (don't like it though)", "Art Competitions", "Team Player"];
+    const texts = ["Art teacher", "English teacher", "Art Competitions", "Team Player"];
     let index = 0;
     let charIndex = 0;
     let isDeleting = false;
