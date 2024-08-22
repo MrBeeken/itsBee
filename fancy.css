@@ -210,3 +210,64 @@ font-style: italic;
       background-position: 0 0;
     }
   }
+
+
+.nav-item{
+  position: relative;
+}
+
+  .nav-item a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    position: relative; /* Required for the pseudo-elements */
+    z-index: 1; /* Keeps the text above the background */
+  }
+
+  .nav-item a::before,
+  .nav-item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+      45deg,
+      #ff73ef,
+      #ffca3a,
+      #1982c4
+    );
+    background-size: 400%;
+    z-index: -1;
+    transition: opacity 0.5s ease;
+    opacity: 0; /* Initially hidden */
+    border-radius: 0.5rem; /* Rounded corners */
+  }
+  
+  .nav-item a::before {
+    filter: blur(1px);
+  }
+  
+  .nav-item a::after {
+    filter: blur(2px);
+  }
+  
+  .nav-item a:hover::before,
+  .nav-item a:hover::after {
+    opacity: 1;
+    animation: glow 10s linear infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
